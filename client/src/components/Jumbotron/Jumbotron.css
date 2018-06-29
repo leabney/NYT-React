@@ -1,0 +1,9 @@
+.jumbotron {
+    background-image: url("/images/header.jpg");
+    height: 150px;
+    padding-top: 35px;
+}
+
+#NYT {
+    width: 40%;
+}
