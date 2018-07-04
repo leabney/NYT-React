@@ -1,7 +1,6 @@
 import React from "react";
 import formatDate from "../../utils/formatDate";
 import { ListItem } from "../List";
-import "./Article.css";
 
 const Article = ({ title, url, _id, date, handleClick, buttonText, saved }) => (
   <ListItem>
