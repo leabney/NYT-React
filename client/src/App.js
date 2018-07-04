@@ -1,22 +1,26 @@
-import React, { Component } from 'react';
-import Wrapper from './components/Wrapper';
-import Jumbotron from './components/Jumbotron';
-import Form from './components/Form';
-import Results from './components/Results';
-import Saved from './components/Saved';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/Home";
+import Saved from "./pages/Saved";
+import NoMatch from "./pages/NoMatch";
+import Nav from "./components/Nav";
+import Jumbotron from "./components/Jumbotron";
+import Footer from "./components/Footer";
+import "./index.css";
 
-
-class App extends Component {
-  render() {
-    return (
-      <Wrapper>
+const App = () => (
+  <Router>
+    <div class="container-fluid">
       <Jumbotron />
-      <Results />
-      <Saved />
-      </Wrapper>
-    );
-  }
-}
+      <Nav />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/saved" component={Saved} />
+        <Route component={NoMatch} />
+      </Switch>
+      <Footer />
+    </div>
+  </Router>
+);
 
 export default App;

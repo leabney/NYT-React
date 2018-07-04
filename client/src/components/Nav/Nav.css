@@ -1,0 +1,17 @@
+.navbar {
+    border-radius: 0;
+    background-color: darkslategray;
+  }
+  
+.navbar-brand {
+  color: white;
+}
+
+.nav-link {
+  color: lightgray;
+}
+
+.nav-link:hover {
+  color: #5bc0de;
+}
+
