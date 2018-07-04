@@ -1,6 +1,10 @@
 footer {
-    background-color: darkslategrey;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: darkslategray;
+    text-align: center;
     color: white;
-    padding: 4px;
- 
-}
+    padding-top: 10px;
+  }
